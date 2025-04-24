@@ -1,0 +1,34 @@
+name: hqnn-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scikit-learn
+  - tqdm
+  - jupyterlab
+  - matplotlib
+  - ipykernel
+  - pytorch
+  - torchaudio
+  - torchvision
+  - cudatoolkit=12.4
+  - pip:
+      - qiskit
+      - qiskit-aer
+      - qiskit-aer-gpu
+      - qiskit-machine-learning
+      - pennylane
+      - pennylane-lightning
+      - pennylane-lightning-gpu
+      - cuquantum
+      - cuquantum-python
+      - cuquantum-cu12
+      - custatevec-cu12
+      - cutensornet-cu12
+      - autograd
+      - autoray
+      - tqdm

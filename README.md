@@ -66,11 +66,45 @@ Feel free to open a GitHub Issue or connect directly if you'd like to collaborat
 
 ## 📁 Project Structure (WIP)
 
+Empty folder are deliberately kept empty to maintain confedentiality of the research
+
 ```bash
-├── models/              # HQNN components (autoencoders, hybrid model)
-├── training/            # Training scripts and evaluation logic
-├── utils/               # Dataset handling and preprocessing
-├── checkpoints/         # Model checkpoints (not tracked in repo)
-├── README.md
-└── requirements.txt     # To be added
+HQNN/
+├── notebooks/               # Jupyter notebooks for experiments, EDA, prototyping
+│   └── pipeline_experiment.ipynb
+│   └── qiskit_pipeline_v1.ipynb
+│
+├── src/                    # Source code (cleaned-up Python files)
+│   ├── __init__.py
+│   ├── model/              # Quantum + classical model components
+│   │   ├── autoencoders.py
+│   │   ├── hybrid_model.py
+│   │   └── quantum_circuit.py
+│   ├── training/           # Training and evaluation logic
+│   │   ├── trainer.py
+│   │   └── eval.py
+│   ├── utils/              # Helpers for preprocessing, logging, plotting
+│   │   ├── data_loader.py
+│   │   ├── metrics.py
+│   │   └── visualizer.py
+│   └── config.py           # Configs, hyperparameters, paths
+│
+├── data/                   # Processed input data (not tracked in git)
+│   └── raw/            
+│   └── processed/
+│
+├── checkpoints/            # Model checkpoints (not tracked in git)
+│
+├── outputs/                # Logs, plots, evaluation results
+│   └── predictions/
+│
+├── tests/                  # Unit tests for components
+│   └── test_model.py
+│
+├── environment.yml         # Conda environment file
+├── requirements.txt        # PIP dependencies (if not using conda)
+├── README.md               # Project overview
+├── .gitignore
+└── run_pipeline.py         # Not active as project in progress
+
 
