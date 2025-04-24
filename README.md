@@ -63,8 +63,18 @@ I’m open to collaboration with:
 Feel free to open a GitHub Issue or connect directly if you'd like to collaborate or follow along.
 
 ---
+## 📁 Current Project Structure (WIP) 
 
-## 📁 Project Structure (WIP)
+```bash
+HQNN/
+├── ETEPipeline             # Latest progress on the HQNN pipeline (abstracted)
+├── Autoencoder             # Jupyter notebooks for deciding architecture of classical pre and post encoders
+├── environment.yml         # Conda environment file
+├── requirements.txt        # PIP dependencies (if not using conda)
+├── README.md               # Project overview
+├── .gitignore
+```
+## 📁 Final Project Structure (WIP) (Expected)
 
 Empty folder are deliberately kept empty to maintain confedentiality of the research
 
