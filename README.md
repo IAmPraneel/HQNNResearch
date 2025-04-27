@@ -11,7 +11,7 @@ A hybrid classical–quantum neural network (HQNN) designed to explore quantum a
 This project combines classical neural networks with quantum circuits using Qiskit and PyTorch to build a hybrid model for predictive tasks. The goal is to evaluate whether quantum-enhanced layers can contribute to learning efficiency or expressivity in practical settings.
 
 ---
-## 📌 Latest update: Switched to pennylane, implemented small HQNN (2qubit, 2 layer) on entire dataset(22K samples) for 5 epochs.
+## 📌 Latest update: Switched to pennylane, implemented 27 HQNN models on subset of dataset(1K samples) for 20 epochs. Recording the logs, parameters and metrics. (9 models, each 3 times with different seed for rigorous results)
 ---
 
 ## 🧠 Approach
@@ -28,7 +28,7 @@ This project combines classical neural networks with quantum circuits using Qisk
 | **Component**             | **Technology / Library**                                |
 |---------------------------|----------------------------------------------------------|
 | **Deep Learning**         | PyTorch (`TorchConnector` from Qiskit ML)               |
-| **Quantum Integration**   | Qiskit, Qiskit Machine Learning, Qiskit Aer, cuQuantum   |
+| **Quantum Integration**   | Qiskit, Qiskit Machine Learning, Qiskit Aer, cuQuantum, pennylane   |
 | **Quantum Backend**       | AerSimulator with GPU support (`cuStateVec`)            |
 | **Automatic Differentiation** | PyTorch Autograd with Qiskit EstimatorQNN        |
 | **Mixed Precision**       | `torch.cuda.amp` (Autocast & GradScaler)                |
@@ -45,13 +45,21 @@ This project combines classical neural networks with quantum circuits using Qisk
 ## 🔧 Current Status
 
 - ✅ Model definition (autoencoders + quantum circuit + integration)
-- ✅ Qiskit backend configuration for GPU-accelerated simulation
+- ✅ Qiskit backend configuration for GPU-accelerated simulation (cuQuantum)
 - ✅ Mixed precision training using `torch.cuda.amp`
-- ✅ Dataset preprocessing and scaling
-- ✅ Preparing transition to PennyLane for framework comparison
+- ✅ Dataset preprocessing and scaling on GPU. Custom dataloaders for GPU based data preprocessing and loading.
+- ✅ Transitioned to PennyLane.
+- ✅ Optimizing HQNN pipeline to have global parameters and making it more functional to automate it.
+- ✅ Trained 30+ models in an epirical, systematic manner recording the logs(per epoch), metrics and parameters for different models on a subset of 1000 samples out of 22000 of total dataset for 20 epochs. (1 model is trained thrice with 3 different random seeds)
 - 🚧 Performance benchmarking against classical baselines
-- 🚧 Optimizing HQNN pipeline to have global parameters and making it more functional to automate it.
+- 🚧 Benchmark HQNN models with different params and create comparitive visualizations and interpret them
+- 🚧 Create 1st draft of the results, providing solid proof of work and potential of the idea to approach institutes for computational resources and funding.
 
+Long term goals (next step)
+- 🚧 Include noise simulation to simulate real quantum hardware
+- 🚧 Compute on both data sets (Two major stock indices from 2 different markets NSE and Chicago stock exchange)
+- 🚧 Implement on real quantum hardware, IBM runtime, Google, look for options
+-  
 ---
 
 ## 💬 Collaboration
