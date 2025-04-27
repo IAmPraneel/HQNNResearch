@@ -55,6 +55,9 @@ This project combines classical neural networks with quantum circuits using Qisk
 - 🚧 Benchmark HQNN models with different params and create comparitive visualizations and interpret them
 - 🚧 Create 1st draft of the results, providing solid proof of work and potential of the idea to approach institutes for computational resources and funding.
 
+- 🧠 Imporvement opportunity identified: rn the autoencoders are optimized for 5 qubit circuits, in next iteration optimize them for 2,3,4 qubit systems also. RN complete this task with noisy simulations, and preprint then go for refinement.
+
+  
 Long term goals (next step)
 - 🚧 Include noise simulation to simulate real quantum hardware
 - 🚧 Compute on both data sets (Two major stock indices from 2 different markets NSE and Chicago stock exchange)
