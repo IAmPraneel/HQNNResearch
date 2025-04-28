@@ -11,7 +11,7 @@ A hybrid classical–quantum neural network (HQNN) designed to explore quantum a
 This project combines classical neural networks with quantum circuits using Qiskit and PyTorch to build a hybrid model for predictive tasks. The goal is to evaluate whether quantum-enhanced layers can contribute to learning efficiency or expressivity in practical settings.
 
 ---
-## 📌 Latest update: Switched to pennylane, implemented 27 HQNN models on subset of dataset(1K samples) for 20 epochs. Recording the logs, parameters and metrics. (9 models, each 3 times with different seed for rigorous results). Based on summary performance 5 models were selected as 'best' and out of those based on epoch wise analysis 2 were chosen for noisy simulation/real quantum hardware tests (IBM Runtime). 
+## 📌 Latest update: Switched to pennylane, implemented 36 HQNN models on subset(1000 samples) of dataset(22000 samples) for 20 epochs. Recording the logs per epoch, parameters and metrics. (12 models, each 3 times with different seed for rigorous results). Based on summary performance 5 models were selected as 'best' and out of those based on epoch wise analysis 2 were chosen for noisy simulation/real quantum hardware tests (IBM Runtime). 
 
 ---
 
