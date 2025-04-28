@@ -11,7 +11,8 @@ A hybrid classical–quantum neural network (HQNN) designed to explore quantum a
 This project combines classical neural networks with quantum circuits using Qiskit and PyTorch to build a hybrid model for predictive tasks. The goal is to evaluate whether quantum-enhanced layers can contribute to learning efficiency or expressivity in practical settings.
 
 ---
-## 📌 Latest update: Switched to pennylane, implemented 27 HQNN models on subset of dataset(1K samples) for 20 epochs. Recording the logs, parameters and metrics. (9 models, each 3 times with different seed for rigorous results)
+## 📌 Latest update: Switched to pennylane, implemented 27 HQNN models on subset of dataset(1K samples) for 20 epochs. Recording the logs, parameters and metrics. (9 models, each 3 times with different seed for rigorous results). Based on summary performance 5 models were selected as 'best' and out of those based on epoch wise analysis 2 were chosen for noisy simulation/real quantum hardware tests (IBM Runtime). 
+
 ---
 
 ## 🧠 Approach
@@ -51,12 +52,13 @@ This project combines classical neural networks with quantum circuits using Qisk
 - ✅ Transitioned to PennyLane.
 - ✅ Optimizing HQNN pipeline to have global parameters and making it more functional to automate it.
 - ✅ Trained 30+ models in an epirical, systematic manner recording the logs(per epoch), metrics and parameters for different models on a subset of 1000 samples out of 22000 of total dataset for 20 epochs. (1 model is trained thrice with 3 different random seeds)
+- ✅ Benchmark HQNN models with different params and create comparitive visualizations and interpret them.
 - 🚧 Performance benchmarking against classical baselines
-- 🚧 Benchmark HQNN models with different params and create comparitive visualizations and interpret them
 - 🚧 Create 1st draft of the results, providing solid proof of work and potential of the idea to approach institutes for computational resources and funding.
 
-- 🧠 Imporvement opportunity identified: rn the autoencoders are optimized for 5 qubit circuits, in next iteration optimize them for 2,3,4 qubit systems also. RN complete this task with noisy simulations, and preprint then go for refinement.
-
+- 🧠 Imporvement opportunity identified:
+-    - rn the autoencoders are optimized for 5 qubit circuits, in next iteration optimize them for 2,3,4 qubit systems also. RN complete this task with noisy simulations, and preprint then go for refinement.
+     - rn standard scaler was used to scale the data, which might not be appropriate for option pricing.
   
 Long term goals (next step)
 - 🚧 Include noise simulation to simulate real quantum hardware
