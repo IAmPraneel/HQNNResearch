@@ -15,12 +15,41 @@ This project combines classical neural networks with quantum circuits using Qisk
 
 ---
 
-## 🧠 Approach
+## 🚀 Features
 
-- **Pre-Autoencoder**: Reduces input dimensionality using classical neural layers.
-- **Quantum Circuit**: Parametrized unitary operations and entanglement for core processing.
-- **Post-Autoencoder**: Classical decoding layer for final regression output.
-- **Full Pipeline**: Fully differentiable, GPU-accelerated, and designed for mixed precision.
+### 🧠 Model Architecture
+- Hybrid **Quantum-Classical Neural Network** using PennyLane and PyTorch.
+- **Quantum Neural Network (QNN)** layer implemented via `qml.qnode` and `qml.qnn.TorchLayer`.
+- **Autoencoder Structure**:
+  - `PreAutoencoder`: Encodes classical input data.
+  - `PostAutoencoder`: Decodes quantum circuit outputs.
+
+### ⚙️ Training Setup
+- Full **GPU support** using CUDA with fallback checks.
+- **Mixed Precision Training** using `torch.autocast` and `torch.cuda.amp.GradScaler`.
+- Adaptive **Learning Rate Scheduler** (`ReduceLROnPlateau`).
+- **Early Stopping** to avoid overfitting and reduce training time.
+
+### 📉 Monitoring and Logging
+- **Gradient Norm Tracking** (total and per-layer) for interpretability and debugging.
+- **Learning Rate Logging** across epochs.
+- **Comprehensive Training Logs** saved in JSON and CSV formats.
+- **Best Model Checkpointing** based on validation loss.
+
+### 📊 Post-Training Visualizations
+- **Training & Validation Loss Curves**.
+- **Gradient Norm Visualization** across training batches.
+- **Learning Rate Schedule Plot** across epochs.
+- **Predictions & Ground Truth Exported** to CSV for analysis.
+
+### 🧾 Logging and Output Management
+- Automatic creation of `logs/` and `Plots/` directories.
+- **Final Run Summary** exported to CSV for experiment tracking.
+
+### ✅ Robustness and Error Handling
+- **CUDA availability check** with clear runtime errors.
+- **Safe initialization** of quantum device (`lightning.gpu`) with error fallback.
+
 
 ---
 
