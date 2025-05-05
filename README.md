@@ -112,11 +112,12 @@ Feel free to open a GitHub Issue or connect directly if you'd like to collaborat
 
 ```bash
 HQNN/
-├── ETEPipeline             # Latest progress on the HQNN pipeline (abstracted)
-├── Autoencoder             # Jupyter notebooks for deciding architecture of classical pre and post encoders
-├── environment.yml         # Conda environment file
-├── requirements.txt        # PIP dependencies (if not using conda)
-├── README.md               # Project overview
+├── Qiskit + cuQuantum Pipeline #  (abstracted)
+├── Qiskit + Pennylane Pipeline #  (abstracted)
+├── Autoencoder                 # Jupyter notebooks for deciding architecture of classical pre and post encoders
+├── environment.yml             # Conda environment file
+├── requirements.txt            # PIP dependencies (if not using conda)
+├── README.md                   # Project overview
 ├── .gitignore
 ```
 ## 📁 Final Project Structure (WIP) (Expected)
