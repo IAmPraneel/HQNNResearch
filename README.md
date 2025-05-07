@@ -1,6 +1,6 @@
 # Hybrid Quantum Neural Network (HQNN)
 
-A hybrid classical–quantum neural network (HQNN) designed to explore quantum advantages in machine learning for regression tasks on structured datasets.
+A hybrid classical–quantum neural network (HQNN) designed to explore quantum advantages in machine learning for regression tasks on Option pricing on NIFTY and SnP500 Options datasets (cleaned and preprocessed).
 
 > 🚧 This project is a work in progress. Contributions, feedback, and collaboration inquiries are welcome.
 
@@ -80,20 +80,16 @@ This project combines classical neural networks with quantum circuits using Qisk
 - ✅ Dataset preprocessing and scaling on GPU. Custom dataloaders for GPU based data preprocessing and loading.
 - ✅ Transitioned to PennyLane.
 - ✅ Optimizing HQNN pipeline to have global parameters and making it more functional to automate it.
-- ✅ Trained 30+ models in an epirical, systematic manner recording the logs(per epoch), metrics and parameters for different models on a subset of 1000 samples out of 22000 of total dataset for 20 epochs. (1 model is trained thrice with 3 different random seeds)
+- ✅ Trained 36 models in an epirical, systematic manner recording the logs(per epoch), metrics and parameters for different models on 3 subsets of 100, 500, 1000 samples out of 22000 (for NIFTY over 4 years) of total dataset for 20 epochs. (1 model is trained thrice with 3 different random seeds). The smaller dataset analysis is to check for low data environment situations and 1000->500->100 samples to monitor change in model behaviour with respect to data scale.
 - ✅ Benchmark HQNN models with different params and create comparitive visualizations and interpret them.
 - ✅ Performance benchmarking against classical baselines
 - 🚧 Create 1st draft of the results, providing solid proof of work and potential of the idea to approach institutes for computational resources and funding.
 
-- 🧠 Imporvement opportunity identified:
--    - rn the autoencoders are optimized for 5 qubit circuits, in next iteration optimize them for 2,3,4 qubit systems also. RN complete this task with noisy simulations, and preprint then go for refinement.
-     - rn standard scaler was used to scale the data, which might not be appropriate for option pricing.
-  
 Long term goals (next step)
 - 🚧 Include noise simulation to simulate real quantum hardware
 - 🚧 Compute on both data sets (Two major stock indices from 2 different markets NSE and Chicago stock exchange)
-- 🚧 Implement on real quantum hardware, IBM runtime, Google, look for options
--  
+- 🚧 Implement on real quantum hardware, IBM runtime, Google, look for options.
+- 🚧 Reach out to institutes and companies for more compute power and funding to expand to entire dataset spanning over 3 years to analyse performacnce large set of data .
 ---
 
 ## 💬 Collaboration
