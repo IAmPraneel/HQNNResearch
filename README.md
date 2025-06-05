@@ -11,7 +11,7 @@ A hybrid classical–quantum neural network (HQNN) designed to explore quantum a
 This project combines classical neural networks with quantum circuits using Qiskit and PyTorch to build a hybrid model for predictive tasks. The goal is to evaluate whether quantum-enhanced layers can contribute to learning efficiency or expressivity in practical settings.
 
 ---
-## 📌 Latest update: Working on 1st draft for preprint to showcase proof of concept and attract collaborators and Institutes for computational resources. Found out that quant circuits negatively contribute to the learning by a factor of (~2.3, qc = 1 - (q_avg / c_avg) where q_avg = sum(q_losses) / len(q_losses) and c_avg = sum(c_losses) / len(c_losses)) . Observed barren plateaus for even small shallow quantum circuits.
+## 📌 Latest update: Working on 1st draft for preprint to showcase proof of concept and attract collaborators and Institutes for computational resources. Found out that quant circuits negatively contribute to the learning by a factor of (~ -2.3, qc = 1 - (q_avg / c_avg) where q_avg = sum(q_losses) / len(q_losses) and c_avg = sum(c_losses) / len(c_losses)) . Observed barren plateaus for even small shallow quantum circuits (<2 qubits).
 
 ---
 
