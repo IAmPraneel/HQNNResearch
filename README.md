@@ -1,6 +1,6 @@
 # Hybrid Quantum Neural Network (HQNN)
 
-A hybrid classical–quantum neural network (HQNN) designed to explore quantum advantages in machine learning for regression tasks on Option pricing on NIFTY and SnP500 Options datasets (cleaned and preprocessed).
+A hybrid classical–quantum neural network (HQNN) designed to explore quantum advantages in machine learning for regression tasks on Option pricing on NIFTY  Options datasets (cleaned and preprocessed).
 
 > 🚧 This project is a work in progress. Contributions, feedback, and collaboration inquiries are welcome.
 
@@ -11,7 +11,7 @@ A hybrid classical–quantum neural network (HQNN) designed to explore quantum a
 This project combines classical neural networks with quantum circuits using Qiskit and PyTorch to build a hybrid model for predictive tasks. The goal is to evaluate whether quantum-enhanced layers can contribute to learning efficiency or expressivity in practical settings.
 
 ---
-## 📌 Latest update: Working on 1st draft for preprint to showcase proof of concept and attract collaborators and Institutes for computational resources. 
+## 📌 Latest update: Working on 1st draft for preprint to showcase proof of concept and attract collaborators and Institutes for computational resources. Found out that quant circuits negatively contribute to the learning by a factor of (~2.3, qc = 1 - (q_avg / c_avg) where q_avg = sum(q_losses) / len(q_losses) and c_avg = sum(c_losses) / len(c_losses)) . Observed barren plateaus for even small shallow quantum circuits.
 
 ---
 
@@ -83,6 +83,11 @@ This project combines classical neural networks with quantum circuits using Qisk
 - ✅ Trained 36 models in an epirical, systematic manner recording the logs(per epoch), metrics and parameters for different models on 3 subsets of 100, 500, 1000 samples out of 22000 (for NIFTY over 4 years) of total dataset for 20 epochs. (1 model is trained thrice with 3 different random seeds). The smaller dataset analysis is to check for low data environment situations and 1000->500->100 samples to monitor change in model behaviour with respect to data scale.
 - ✅ Benchmark HQNN models with different params and create comparitive visualizations and interpret them.
 - ✅ Performance benchmarking against classical baselines
+- ✅ Found out that quant circuits negatively contribute to the learning by a factor of (~ -2.3, qc = 1 - (q_avg / c_avg) where q_avg = sum(q_losses) / len(q_losses) and c_avg = sum(c_losses) / len(c_losses)) .
+- ✅ Barren plateaus appear early (n ≥ 3), even in shallow circuits. With gradient efficiency = 1 for all models & gradient efficiency scaling linearly with qubits (2*n) instead of expected 4^(n) - 1. Which contradicts theoretical assumptions in current literature. (npj QI)
+- 
+- 🚧 Performing Entaglemnet Entropy analysis for data to check for volume law for data in HEA (hardware efficient ansatz). (PRX Quantum)
+- 🚧 Explore Sparse HEA, and compare to current HEA to check for mitigation techniques for barren plateaus. (Science Advancements, Nature Communication)
 - 🚧 Create 1st draft of the results, providing solid proof of work and potential of the idea to approach institutes for computational resources and funding.
 
 Long term goals (next step)
