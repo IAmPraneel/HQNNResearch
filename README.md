@@ -1,6 +1,6 @@
 # Hybrid Quantum Neural Network (HQNN)
 
-A hybrid classical–quantum neural network (HQNN) designed to explore quantum advantages in machine learning for regression tasks on Option pricing on NIFTY  Options datasets (cleaned and preprocessed).
+A hybrid classical–quantum neural network (HQNN) designed to explore quantum advantages in machine learning for regression tasks on Option pricing on NIFTY  Options datasets.
 
 > 🚧 This project is a work in progress. Contributions, feedback, and collaboration inquiries are welcome.
 
@@ -11,7 +11,7 @@ A hybrid classical–quantum neural network (HQNN) designed to explore quantum a
 This project combines classical neural networks with quantum circuits using Qiskit and PyTorch to build a hybrid model for predictive tasks. The goal is to evaluate whether quantum-enhanced layers can contribute to learning efficiency or expressivity in practical settings.
 
 ---
-## 📌 Latest update: Working on 1st draft for preprint to showcase proof of concept and attract collaborators and Institutes for computational resources. Found out that quant circuits negatively contribute to the learning by a factor of (~ -2.3, qc = 1 - (q_avg / c_avg) where q_avg = sum(q_losses) / len(q_losses) and c_avg = sum(c_losses) / len(c_losses)) .
+## 📌 Latest update: Submitted and under consideration at npj Quantum Information.
 
 ---
 
@@ -83,14 +83,13 @@ This project combines classical neural networks with quantum circuits using Qisk
 - ✅ Trained 36 models in an epirical, systematic manner recording the logs(per epoch), metrics and parameters for different models on 1000 sample out of 22000 (for NIFTY over 4 years) of total dataset for 50 epochs. (1 model is trained with 3 different random seeds). 
 - ✅ Performance benchmarking against classical baselines
 - ✅ Found out that quant circuits negatively contribute to the learning by a factor of (~ -2.3, qc = 1 - (q_avg / c_avg) where q_avg = sum(q_losses) / len(q_losses) and c_avg = sum(c_losses) / len(c_losses)) .
-
+- ✅ Submitted to npj Quantum Information, under consideration.
+- ✅ Patent pending.
  
-
-
 Long term goals (next step)
+- 🚧 See you at AAAI 2025 and ICLR 2025 !
 - 🚧 Performing Entaglemnet Entropy analysis for data to check for volume law for data in HEA (hardware efficient ansatz). 
 - 🚧 Explore Sparse HEA, and compare to current HEA to check for mitigation techniques for barren plateaus. 
-- 🚧 Create 1st draft of the results, providing solid proof of work and potential of the idea to approach institutes for computational resources and funding.
 - 🚧 Include noise simulation to simulate real quantum hardware
 - 🚧 Compute on both data sets (Two major stock indices from 2 different markets NSE (NIFTY) and Chicago stock exchange (SNP500))
 - 🚧 Implement on real quantum hardware, IBM runtime, Google, look for options.
