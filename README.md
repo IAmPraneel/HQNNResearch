@@ -8,10 +8,10 @@ A hybrid classical–quantum neural network (HQNN) designed to explore quantum a
 
 ## ✨ Overview
 
-This project combines classical neural networks with quantum circuits using Qiskit and PyTorch to build a hybrid model for predictive tasks. The goal is to evaluate whether quantum-enhanced layers can contribute to learning efficiency or expressivity in practical settings.
+Preprint: https://doi.org/10.21203/rs.3.rs-7093575/v1
 
 ---
-## 📌 Latest update: Submitted and under consideration at npj Quantum Information.
+## 📌 Latest update: Submitted and under consideration at npj Quantum Information. 
 
 ---
 
