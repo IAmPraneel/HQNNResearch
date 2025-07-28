@@ -11,7 +11,7 @@ A hybrid classical–quantum neural network (HQNN) designed to explore quantum a
 Preprint: https://doi.org/10.21203/rs.3.rs-7093575/v1
 
 ---
-## 📌 Latest update: Submitted and under consideration at npj Quantum Information. 
+## 📌 Latest update: 
 
 ---
 
@@ -83,11 +83,11 @@ Preprint: https://doi.org/10.21203/rs.3.rs-7093575/v1
 - ✅ Trained 36 models in an epirical, systematic manner recording the logs(per epoch), metrics and parameters for different models on 1000 sample out of 22000 (for NIFTY over 4 years) of total dataset for 50 epochs. (1 model is trained with 3 different random seeds). 
 - ✅ Performance benchmarking against classical baselines
 - ✅ Found out that quant circuits negatively contribute to the learning by a factor of (~ -2.3, qc = 1 - (q_avg / c_avg) where q_avg = sum(q_losses) / len(q_losses) and c_avg = sum(c_losses) / len(c_losses)) .
-- ✅ Submitted to npj Quantum Information, under consideration.
+- ✅ Submitted to npj Quantum Information, Rejected.
 - ✅ Patent pending.
  
 Long term goals (next step)
-- 🚧 See you at AAAI 2025 and ICLR 2025 !
+- 🚧 See you at ICLR 2025 !
 - 🚧 Performing Entaglemnet Entropy analysis for data to check for volume law for data in HEA (hardware efficient ansatz). 
 - 🚧 Explore Sparse HEA, and compare to current HEA to check for mitigation techniques for barren plateaus. 
 - 🚧 Include noise simulation to simulate real quantum hardware
