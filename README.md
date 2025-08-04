@@ -8,7 +8,8 @@ A hybrid classical–quantum neural network (HQNN) designed to explore quantum a
 
 ## ✨ Overview
 
-Preprint: https://doi.org/10.21203/rs.3.rs-7093575/v1
+Preprint: https://www.researchsquare.com/article/rs-7093575/v1
+PennyLane forum thread: https://discuss.pennylane.ai/t/gpu-underusage-for-hybrid-qnn-using-lightning-gpu-for-research/8607/3
 
 ---
 ## 📌 Latest update: 
