@@ -84,7 +84,7 @@ PennyLane forum thread: https://discuss.pennylane.ai/t/gpu-underusage-for-hybrid
 - ✅ Trained 36 models in an epirical, systematic manner recording the logs(per epoch), metrics and parameters for different models on 1000 sample out of 22000 (for NIFTY over 4 years) of total dataset for 50 epochs. (1 model is trained with 3 different random seeds). 
 - ✅ Performance benchmarking against classical baselines
 - ✅ Found out that quant circuits negatively contribute to the learning by a factor of (~ -2.3, qc = 1 - (q_avg / c_avg) where q_avg = sum(q_losses) / len(q_losses) and c_avg = sum(c_losses) / len(c_losses)) .
-- ✅ Submitted to npj Quantum Information, Rejected.
+- ✅ Submitted to npj Quantum Information, handled by Editor-in-Chief. Transfered to Quantum Machine Intelligence.
 - ✅ Patent pending.
  
 Long term goals (next step)
